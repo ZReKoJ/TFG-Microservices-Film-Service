@@ -1,0 +1,12 @@
+[Unit]
+Description = Film Service
+After network.target = film-service.service
+
+[Service]
+Type = forking
+ExecStart = /usr/local/bin/film-service.sh start
+ExecStop = /usr/local/bin/film-service.sh stop
+ExecReload = /usr/local/bin/film-service.sh reload
+
+[Install]
+WantedBy=multi-user.target

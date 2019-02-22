@@ -1,6 +1,6 @@
 #!/bin/sh
 SERVICE_NAME=film-service
-PATH_TO_JAR=/home/local/MyProject/MyJar.jar
+PATH_TO_JAR=/home/TFG-Microservices-Film-Service/target/film-service-1.0-SNAPSHOT.jar
 PID_PATH_NAME=/tmp/film-service-pid
 case $1 in
     start)
